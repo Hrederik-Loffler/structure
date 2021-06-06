@@ -1927,7 +1927,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  */
 
 
-__webpack_require__(/*! ./source/app */ "./resources/js/source/app.jsx");
+__webpack_require__(/*! ./source/app */ "./resources/js/source/app.js");
 
 /***/ }),
 
@@ -1975,10 +1975,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/source/app.jsx":
-/*!*************************************!*\
-  !*** ./resources/js/source/app.jsx ***!
-  \*************************************/
+/***/ "./resources/js/source/app.js":
+/*!************************************!*\
+  !*** ./resources/js/source/app.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1989,7 +1989,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _balkangraph_orgchart_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @balkangraph/orgchart.js */ "./node_modules/@balkangraph/orgchart.js/orgchart.js");
 /* harmony import */ var _components_Home_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Home/Home */ "./resources/js/source/components/Home/Home.jsx");
 /* harmony import */ var _components_Chart_Chart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Chart/Chart */ "./resources/js/source/components/Chart/Chart.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./data */ "./resources/js/source/data.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -2003,88 +2005,14 @@ function App() {
   return (
     /*#__PURE__*/
     // <Home style={{height: '100%'}}>
-    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components_Chart_Chart__WEBPACK_IMPORTED_MODULE_5__.default, {
-      style: {
-        height: '100%'
-      },
-      nodes: [{
-        id: 1,
-        name: "Rodion Bezruk",
-        department: "SEO",
-        avatar: "https://ca.slack-edge.com/T013GV05QSE-U013GV1FKRQ-g1afae5c8eac-512"
-      }, {
-        id: 2,
-        pid: 1,
-        name: "LangShop",
-        department: "LangShop",
-        avatar: "https://langshop.app/img/features-hero/background.jpg"
-      }, {
-        id: 3,
-        pid: 2,
-        name: "Product Managers",
-        department: "LangShop",
-        avatar: "https://thumbs.dreamstime.com/z/sales-manager-working-office-vector-icon-profession-sales-manager-concept-illustration-man-grey-suit-telephone-140190579.jpg"
-      }, {
-        id: 4,
-        pid: 3,
-        name: "Ekaterina Velekdan",
-        department: "Product Managers",
-        avatar: "https://ca.slack-edge.com/T013GV05QSE-U013Y0WJJGM-fbf23367e98b-512"
-      }, {
-        id: 5,
-        pid: 1,
-        name: "Outsourcing",
-        department: "Outsourcing",
-        avatar: "https://senior.ua/storage/article/content/72f8e9a6-9851-4a44-94e2-51c60813cccd.jpeg"
-      }, {
-        id: 6,
-        pid: 1,
-        name: "HR",
-        department: "HR",
-        avatar: "https://www.everest.ua/wp-content/uploads/2020/04/170.jpg"
-      }, {
-        id: 7,
-        pid: 1,
-        name: "Dev",
-        department: "Dev",
-        avatar: "https://developer.android.com/images/social/android-developers.png"
-      }, {
-        id: 8,
-        pid: 5,
-        name: "Project Managers",
-        department: "Outsourcing",
-        avatar: "https://api2.withmyfriends.org/media/events/2019/03/4493-user-312999-main-2.jpg"
-      }, {
-        id: 9,
-        pid: 5,
-        name: "Sales Managers",
-        department: "Outsourcing",
-        avatar: "https://www.prosalesguy.ca/prosalesguy/wp-content/uploads/2013/09/Sales_manager.jpg"
-      }, {
-        id: 10,
-        pid: 8,
-        name: "Daria Chernenko",
-        department: "Project Managers",
-        avatar: "https://ca.slack-edge.com/T013GV05QSE-U013FHUMZBP-d043c3b7ca8b-512"
-      }, {
-        id: 11,
-        pid: 9,
-        name: "Viktoriia Sarapii",
-        department: "Sales Managers",
-        avatar: "https://ca.slack-edge.com/T013GV05QSE-U019S1FBVU5-ec0be5a883a4-512"
-      }, {
-        id: 12,
-        pid: 6,
-        name: "Oksana Yasinskaya",
-        department: "HR",
-        avatar: "https://ca.slack-edge.com/T013GV05QSE-U013H68PGLW-06e40b331c19-512"
-      }]
+    (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_Chart_Chart__WEBPACK_IMPORTED_MODULE_5__.default, {
+      nodes: _data__WEBPACK_IMPORTED_MODULE_6__.default
     }) // </Home>
 
   );
 }
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(App, {}), document.getElementById('app'));
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(App, {}), document.getElementById('app'));
 
 /***/ }),
 
@@ -2097,83 +2025,94 @@ react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ _default)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _balkangraph_orgchart_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @balkangraph/orgchart.js */ "./node_modules/@balkangraph/orgchart.js/orgchart.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 
 
 
-
-var _default = /*#__PURE__*/function (_Component) {
-  _inherits(_default, _Component);
-
-  var _super = _createSuper(_default);
-
-  function _default(props) {
-    var _this;
-
-    _classCallCheck(this, _default);
-
-    _this = _super.call(this, props);
-    _this.devRef = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createRef();
-    return _this;
-  }
-
-  _createClass(_default, [{
-    key: "shouldComponentUpdate",
-    value: function shouldComponentUpdate() {
-      return false;
-    }
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.chart = new _balkangraph_orgchart_js__WEBPACK_IMPORTED_MODULE_1__.default(this.devRef.current, {
-        nodes: this.props.nodes,
-        nodeBinding: {
-          field_0: "name",
-          field_1: "department",
-          img_0: "avatar"
+var Chart = function Chart(props) {
+  var devRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    new _balkangraph_orgchart_js__WEBPACK_IMPORTED_MODULE_1__.default(devRef.current, {
+      template: "rony",
+      nodes: props.nodes,
+      nodeMenu: {
+        details: {
+          text: "Details"
+        },
+        edit: {
+          text: "Edit"
+        },
+        add: {
+          text: "Add"
+        },
+        remove: {
+          text: "Remove"
         }
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        id: "tree",
-        ref: this.devRef
-      });
-    }
-  }]);
+      },
+      nodeBinding: {
+        field_0: "name",
+        field_1: "department",
+        img_0: "avatar"
+      },
+      tags: {
+        'dep': {
+          template: "olivia"
+        },
+        'dep2': {
+          template: "ana"
+        },
+        'dep3': {
+          template: "belinda"
+        },
+        'dep4': {
+          template: "polina"
+        }
+      }
+    });
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    id: "tree",
+    style: {
+      height: '100vh'
+    },
+    ref: devRef
+  });
+};
 
-  return _default;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
-
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Chart); // export default class extends Component {
+//
+//     constructor(props) {
+//         super(props);
+//         this.devRef = React.createRef()
+//     }
+//
+//     shouldComponentUpdate() {
+//         return false;
+//     }
+//
+//     componentDidMount() {
+//         this.chart = new OrgChart(this.devRef.current, {
+//             nodes: this.props.nodes,
+//
+//             nodeBinding: {
+//                 field_0: "name",
+//                 field_1: "department",
+//                 img_0: "avatar"
+//             }
+//         });
+//     }
+//
+//     render() {
+//         return (
+//             <div id="tree" ref={this.devRef}></div>
+//         )
+//     }
+// }
 
 /***/ }),
 
@@ -2200,6 +2139,99 @@ var Home = function Home() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+
+/***/ }),
+
+/***/ "./resources/js/source/data.js":
+/*!*************************************!*\
+  !*** ./resources/js/source/data.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var data = [{
+  id: 1,
+  name: "Rodion Bezruk",
+  department: "SEO",
+  avatar: "https://ca.slack-edge.com/T013GV05QSE-U013GV1FKRQ-g1afae5c8eac-512"
+}, {
+  id: 2,
+  pid: 1,
+  name: "LangShop",
+  tags: ["dep4"],
+  department: "LangShop",
+  avatar: "https://langshop.app/img/features-hero/background.jpg"
+}, {
+  id: 3,
+  pid: 2,
+  name: "Product Managers",
+  tags: ["dep"],
+  department: "LangShop",
+  avatar: "https://thumbs.dreamstime.com/z/sales-manager-working-office-vector-icon-profession-sales-manager-concept-illustration-man-grey-suit-telephone-140190579.jpg"
+}, {
+  id: 4,
+  pid: 3,
+  name: "Ekaterina Velekdan",
+  department: "Product Managers",
+  avatar: "https://ca.slack-edge.com/T013GV05QSE-U013Y0WJJGM-fbf23367e98b-512"
+}, {
+  id: 5,
+  pid: 1,
+  name: "Outsourcing",
+  department: "Outsourcing",
+  avatar: "https://senior.ua/storage/article/content/72f8e9a6-9851-4a44-94e2-51c60813cccd.jpeg"
+}, {
+  id: 6,
+  pid: 1,
+  name: "HR",
+  tags: ["dep"],
+  department: "HR",
+  avatar: "https://www.everest.ua/wp-content/uploads/2020/04/170.jpg"
+}, {
+  id: 7,
+  pid: 1,
+  name: "Dev",
+  tags: ["dep"],
+  department: "Dev",
+  avatar: "https://developer.android.com/images/social/android-developers.png"
+}, {
+  id: 8,
+  pid: 5,
+  name: "Project Managers",
+  tags: ["dep2"],
+  department: "Outsourcing",
+  avatar: "https://api2.withmyfriends.org/media/events/2019/03/4493-user-312999-main-2.jpg"
+}, {
+  id: 9,
+  pid: 5,
+  name: "Sales Managers",
+  tags: ["dep3"],
+  department: "Outsourcing",
+  avatar: "https://www.prosalesguy.ca/prosalesguy/wp-content/uploads/2013/09/Sales_manager.jpg"
+}, {
+  id: 10,
+  pid: 8,
+  name: "Daria Chernenko",
+  department: "Project Managers",
+  avatar: "https://ca.slack-edge.com/T013GV05QSE-U013FHUMZBP-d043c3b7ca8b-512"
+}, {
+  id: 11,
+  pid: 9,
+  name: "Viktoriia Sarapii",
+  department: "Sales Managers",
+  avatar: "https://ca.slack-edge.com/T013GV05QSE-U019S1FBVU5-ec0be5a883a4-512"
+}, {
+  id: 12,
+  pid: 6,
+  name: "Oksana Yasinskaya",
+  department: "HR",
+  avatar: "https://ca.slack-edge.com/T013GV05QSE-U013H68PGLW-06e40b331c19-512"
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (data);
 
 /***/ }),
 
